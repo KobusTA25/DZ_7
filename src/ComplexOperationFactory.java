@@ -1,14 +1,14 @@
 public class ComplexOperationFactory {
     public ComplexOperation getOperation(String operation) {
         switch (operation.toLowerCase()) {
-            case "addition":
+            case "сумма":
                 return new AdditionOperation();
-            case "multiplication":
+            case "умножение":
                 return new MultiplicationOperation();
-            case "division":
+            case "деление":
                 return new DivisionOperation();
             default:
-                throw new IllegalArgumentException("Unknown operation: " + operation);
+                throw new IllegalArgumentException("Операция неизвестна: " + operation);
         }
     }
 }

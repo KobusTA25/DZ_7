@@ -3,7 +3,7 @@ public class DivisionOperation implements ComplexOperation {
     public ComplexNumber operate(ComplexNumber a, ComplexNumber b) {
         double denominator = b.getReal() * b.getReal() + b.getImaginary() * b.getImaginary();
         if (denominator == 0) {
-            throw new ArithmeticException("Division by zero");
+            throw new ArithmeticException("Деление на ноль");
         }
         double real = (a.getReal() * b.getReal() + a.getImaginary() * b.getImaginary()) / denominator;
         double imaginary = (a.getImaginary() * b.getReal() - a.getReal() * b.getImaginary()) / denominator;
